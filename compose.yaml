@@ -1,0 +1,8 @@
+services:
+  data-analysis:
+    build: .
+    image: dhia8448/tp04-air-quality:latest
+    container_name: tp04-analysis
+    volumes:
+      - /home/dhia-okba/Desktop/air_quality_5gb.csv:/app/data/air_quality_5gb.csv:ro
+    restart: "no"
